@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random as r
 def button(frame):          #Function to define a button
-    b=Button(frame,bg="white",width=3,text=" ",font=('century gothic',50))
+    b=Button(frame,bg="lime",width=3,text=" ",font=('century gothic',50))
 
     return b
 def change_a():             #Function to change the operand for the next player
@@ -42,7 +42,8 @@ def click(row,col):
 root=Tk()                   #Window defined
 root.title("Tic-Tac-Toe")   #Title given
 a=r.choice(['O','X'])       #Two operators defined
-colour={'O':"yellow",'X':"green"}
+root.bitmap('C:\\Users\\User\\Downloads\\cross_icon.ico')
+colour={'O':"red",'X':"blue"}
 b=[[],[],[]]
 
 for i in range(3):
